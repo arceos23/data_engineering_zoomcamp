@@ -23,8 +23,8 @@ def main(args):
     )
 
     parquet_file = pq.ParquetFile(file)
-    file_start = time()
     print(f"Loading {file} into database.")
+    file_start = time()
     for i, batch in enumerate(parquet_file.iter_batches()):
         print(f"Loading batch {i} into database.")
         batch_start = time()

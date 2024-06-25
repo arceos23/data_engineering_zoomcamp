@@ -1,0 +1,4 @@
+.env
+venv
+ny_taxi_postgres_data
+**/.DS_Store
